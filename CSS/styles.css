@@ -8,13 +8,13 @@
     --cor-linha-tabela: #000000; 
 }
 
-
+/* seletor universal da pagina */
 *{
     margin:0;
     padding: 0;
     box-sizing: border-box;
 }
-
+/* aplica em tag*/
 body{
     display: flex;
     background-color: var(--cor-fundo);
@@ -24,7 +24,7 @@ body{
 /*------------------------*/
 /* Lateral da Página */
 /*------------------------*/
-
+/* ponto antes do nome ele procura por class*/
 .lateral{
     font-family: 'Mooli', sans-serif;
     width: 25%;
