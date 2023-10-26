@@ -1,15 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather|Oswald|Satisfy&display=swap');
- 
-:root{
+
+:root {
     --cor-fundo: #505050;
     --cor-fundo-lateral: #3d3833;
     --cor-fundo-principal-claro: #faf3eb;
     --cor-fundo-tabela: #8d847b;
     --cor-fundo-linha-tabela-principal: #c7b9a9;
     --cor-fundo-linha-tabela-secundaria: #faf3eb;
+    
     --cor-fonte-branco: #ffffff;
     --cor-fonte-preto: #000000;
+    --cor-fonte-lateral-branco: #ffffff;
     --cor-fonte-secundaria: #8d847b;
+    
     --cor-hover: #8d847b;
     --cor-lateral-linha: #c7b9a9;
     --cor-borda: #000000;
@@ -25,7 +28,7 @@
     font-family: var(--fonte);
 }
 
-body{
+body {
     display: flex;
     background-color: var(--cor-fundo);
 }
@@ -34,7 +37,7 @@ body{
 /*Lateral*/
 /*-------------*/
 
-.lateral{
+.lateral {
     width: 15%;
     height: 100vh;
     color: var(--cor-fonte-branco);
@@ -43,22 +46,66 @@ body{
     background-color: var(--cor-fundo-lateral);
 }
 
-.logo{
+.logo {
     margin: 15px 0px;
     padding: 5px 0px;
     border-radius: 50%;
 }
 
-.lateral h1{
+.lateral h1 {
     color: var(--cor-fonte-branco);
     font-size: 2rem;
 }
 
-.lateral h4{
+.lateral h4 {
     color: var(--cor-fonte-secundaria);
 }
 
-hr{
+hr {
     margin: 15px;
     border-top: 3px solid var(--cor-lateral-linha);
 }
+
+.links {
+    display: block;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 1.5rem;
+}
+
+.links li{
+    padding: 15px 0px;
+}
+
+.links a{
+    color: var(--cor-fonte-branco);
+}
+
+.btn {
+    transition: ease-in-out .3s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: var(--cor-fonte-lateral-branco);
+    background-color: var(--cor-hover);
+}
+
+.btn-social:hover{
+    background: none;
+}
+
+.redes {
+    padding-top: 50px;
+}
+
+.social{
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.img-social{
+    width: 30px;
+}
+
